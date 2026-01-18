@@ -1,6 +1,6 @@
 import qrcode
 
-url = "https://electrofarfanes.mx/eq1/AyV/Proyectito/login.html"
+url = "www.google.com"
 
 qr = qrcode.QRCode(
     version=1,
@@ -14,5 +14,6 @@ qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
 img.save("qr_url.png")
+
 
 print("QR generado: qr_url.png")
